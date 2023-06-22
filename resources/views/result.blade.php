@@ -101,15 +101,31 @@
                 @endforeach
             </tbody>
         </table>
-        {{-- @dd($score) --}}
-        {{-- <p>Alternatif dengan skor tertinggi: {{ $score }}</p> --}}
+
+
+        <p>Rangking lainnya...</p>
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th scope="col">Ranking</th>
+                <th scope="col">Alternatif</th>
+                <th scope="col">Score</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach ($score_all as $s)
+                    @if($loop->iteration > 10)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $s['nama'] }}</td>
+                            <td>{{ $s['score'] }}</td>
+                        </tr>
+                    @endif
+                @endforeach
+            </tbody>
+        </table>
+
             
-
-
-
-
-
-
         
     </div>
 

@@ -80,37 +80,37 @@
             </div>
 
             <div class="form-group">
-                <label for="inputAddress">Weight C1  (1-10)</label>
+                <label for="inputAddress">Bobot "Kepadatan Penduduk per Km2" (1-10)</label>
                 <input required type="number" class="form-control" name="w_c1" id="w_c1" min="1" max="10">
                 <span class="error-message">Masukkan angka antara 1-10.</span>
             </div>
 
             <div class="form-group">
-                <label for="inputAddress2">Weight C2 (1-10)</label>
+                <label for="inputAddress2">Bobot "Jumlah Penduduk non-Muslim" (1-10)</label>
                 <input required type="number" class="form-control" name="w_c2" id="w_c2" min="1" max="10">
                 <span class="error-message">Masukkan angka antara 1-10.</span>
             </div>
 
             <div class="form-group">
-                <label for="inputAddress2">Weight C3 (1-10)</label>
+                <label for="inputAddress2">Bobot "Jumlah Restoran" (1-10)</label>
                 <input required type="number" class="form-control" name="w_c3" id="w_c3" min="1" max="10">
                 <span class="error-message">Masukkan angka antara 1-10.</span>
             </div>
 
             <div class="form-group">
-                <label for="inputAddress2">Weight C4 (1-10)</label>
+                <label for="inputAddress2">Bobot "Jumlah Pusat Aktivitas Masyarakat" (1-10)</label>
                 <input required type="number" class="form-control" name="w_c4" id="w_c4" min="1" max="10">
                 <span class="error-message">Masukkan angka antara 1-10.</span>
             </div>
 
             <div class="form-group">
-                <label for="inputAddress2">Weight C5 (1-10)</label>
+                <label for="inputAddress2">Bobot "Jumlah Sekolah Kristen dan Katolik" (1-10)</label>
                 <input required type="number" class="form-control" name="w_c5" id="w_c5" min="1" max="10">
                 <span class="error-message">Masukkan angka antara 1-10.</span>
             </div>
 
             <div class="form-group">
-                <label for="inputAddress2">Weight C6 (1-10)</label>
+                <label for="inputAddress2">Bobot "Jumlah Tempat Peribadatan non-Muslim" (1-10)</label>
                 <input required type="number" class="form-control" name="w_c6" id="w_c6" min="1" max="10">
                 <span class="error-message">Masukkan angka antara 1-10.</span>
             </div>

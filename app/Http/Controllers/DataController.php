@@ -221,8 +221,9 @@ class DataController extends Controller
 
         // return $sorted->values()->all();
         return view('result', [
-            'result' => $result,
-            'score' => $sorted->take(10)
+            // 'result' => $result,
+            'score' => $sorted->take(10),
+            'score_all' => $sorted
         ]);
     }
 }

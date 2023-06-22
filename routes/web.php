@@ -19,4 +19,8 @@ Route::get('/', function () {
     return view('input');
 });
 
+Route::get('/detail', function () {
+    return view('detail');
+});
+
 Route::post('/process', [DataController::class, 'process']);
