@@ -2,7 +2,10 @@
 <html>
 <head>
     <title>Result</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -70,16 +73,46 @@
 </head>
 <body class="dark-mode">
     <div class="container">
-        <h1>Result Page</h1>
-
-        <div class="result-text">
-            <p>Result:</p>
-            <p class="result-value">Oioioi</p> <!-- Ganti dengan nilai hasil yang sesuai -->
-        </div>
+        <h1>Hasil</h1>
 
         <div class="go-back">
-            <a href="index.html">Go Back</a>
+            <a href="/">Go Back</a>
         </div>
+        <div class="result-text">
+            <p>Top 10 Rangking</p>
+        </div>
+
+        
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th scope="col">Ranking</th>
+                <th scope="col">Alternatif</th>
+                <th scope="col">Score</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach ($score as $s)
+                    <tr>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $s['nama'] }}</td>
+                        <td>{{ $s['score'] }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+        {{-- @dd($score) --}}
+        {{-- <p>Alternatif dengan skor tertinggi: {{ $score }}</p> --}}
+            
+
+
+
+
+
+
+        
     </div>
+
+    
 </body>
 </html>
