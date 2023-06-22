@@ -72,6 +72,7 @@
     </style>
 </head>
 <body class="dark-mode">
+    @include('sidebar')
     <div class="container">
         <h1>Hasil</h1>
 

@@ -68,6 +68,7 @@
     </style>
 </head>
 <body>
+    @include('sidebar')
     <div class="container">
         <h1>Input</h1>
 
